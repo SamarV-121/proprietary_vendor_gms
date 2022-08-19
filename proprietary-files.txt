@@ -1,0 +1,11 @@
+# All unpinned blobs are extracted from bluejay TPB4.220624.008.A2.
+
+-product/priv-app/Phonesky/Phonesky.apk;PRESIGNED
+-product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
+-product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk;PRESIGNED
+-system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
+product/etc/permissions/privapp-permissions-google-p.xml
+product/etc/permissions/split-permissions-google.xml
+product/etc/sysconfig/google_build.xml
+product/etc/sysconfig/google.xml
+system_ext/etc/permissions/privapp-permissions-google-se.xml
