@@ -31,6 +31,11 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 write_headers "arm64" "TARGET_ARCH"
 sed -i 's/vendor\/gms\//vendor\/gms\/common/' "${PRODUCTMK}"
 
+OVERLAYS=$(find overlay/ -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | tr '\n' ' ')
+printf "\n" >> "$PRODUCTMK"
+echo "PRODUCT_SOONG_NAMESPACES += vendor/$VENDOR/overlay" >> "$PRODUCTMK"
+echo "PRODUCT_PACKAGES += $OVERLAYS" >> "$PRODUCTMK"
+
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 # HAX

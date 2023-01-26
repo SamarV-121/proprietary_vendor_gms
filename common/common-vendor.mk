@@ -17,3 +17,6 @@ PRODUCT_PACKAGES += \
     PrebuiltGmsCoreSc \
     AndroidPlatformServices \
     GoogleServicesFramework
+
+PRODUCT_SOONG_NAMESPACES += vendor/gms/overlay
+PRODUCT_PACKAGES += GmsOverlay
