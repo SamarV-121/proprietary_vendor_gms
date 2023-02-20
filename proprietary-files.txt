@@ -3,6 +3,7 @@
 -product/priv-app/Phonesky/Phonesky.apk;PRESIGNED
 -product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
 -product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk;PRESIGNED
+-product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED
 -system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/permissions/split-permissions-google.xml
@@ -10,3 +11,6 @@ product/etc/sysconfig/game_service.xml
 product/etc/sysconfig/google_build.xml
 product/etc/sysconfig/google.xml
 system_ext/etc/permissions/privapp-permissions-google-se.xml
+
+# from product/etc/sysconfig/nexus.xml
+product/etc/sysconfig/wellbeing.xml|807048b311355c83ef8d562a8907ad3c2640a5a5

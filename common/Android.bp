@@ -30,6 +30,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "WellbeingPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "GoogleServicesFramework",
 	owner: "gms",
 	apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
