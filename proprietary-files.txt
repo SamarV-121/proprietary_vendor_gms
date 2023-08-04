@@ -1,5 +1,6 @@
 # All unpinned blobs are extracted from gsi_gms_arm64 UPB4.230623.005.
 
+-product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED
 -product/priv-app/Phonesky/Phonesky.apk;PRESIGNED
 -product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
 -product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk;PRESIGNED
