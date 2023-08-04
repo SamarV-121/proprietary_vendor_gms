@@ -39,25 +39,25 @@ echo "PRODUCT_SOONG_NAMESPACES += vendor/$VENDOR/overlay" >> "$PRODUCTMK"
 echo "PRODUCT_PACKAGES += $OVERLAYS" >> "$PRODUCTMK"
 
 # HAX
-awk '/PrebuiltGmsCoreSc/ {print NR-2 "," NR+7 "d"}' "${ANDROIDBP}" | sed -f - -i "${ANDROIDBP}"
+awk '/PrebuiltGmsCore.apk/ {print NR-2 "," NR+9 "d"}' "${ANDROIDBP}" | sed -f - -i "${ANDROIDBP}"
 cat <<EOF >>"${ANDROIDMK}"
-\$(PRODUCT_OUT)/obj/GMS/PrebuiltGmsCoreSc.apk: \$(MINIGZIP)
+\$(PRODUCT_OUT)/obj/GMS/PrebuiltGmsCore.apk: \$(MINIGZIP)
 $(printf '\t')@rm -rf \$(dir \$@)
 $(printf '\t')@mkdir -p \$(dir \$@)
-$(printf '\t')@\$(MINIGZIP) -c -d vendor/gms/common/proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk.gz > \$@
+$(printf '\t')@\$(MINIGZIP) -c -d vendor/gms/common/proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk.gz > \$@
 
 include \$(CLEAR_VARS)
-LOCAL_MODULE := PrebuiltGmsCoreSc
+LOCAL_MODULE := PrebuiltGmsCore
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_ENFORCE_USES_LIBRARIES := false
 LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_SRC_FILES := ../../../\$(PRODUCT_OUT)/obj/GMS/PrebuiltGmsCoreSc.apk
+LOCAL_SRC_FILES := ../../../\$(PRODUCT_OUT)/obj/GMS/PrebuiltGmsCore.apk
 include \$(BUILD_PREBUILT)
 
 EOF
-gzip -f "${ANDROID_ROOT}/${OUTDIR}/proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk"
+gzip -f "${ANDROID_ROOT}/${OUTDIR}/proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk"
 
 # Finish
 write_footers
