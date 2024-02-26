@@ -133,4 +133,8 @@
 
     <!-- Denylist of packages that are not eligible for automatic rollback -->
     <automatic-rollback-denylisted-app package="com.android.vending" />
+
+    <!-- Allow device lock controller app to schedule jobs and alarms when app in background,
+        otherwise, it may not be able to enforce provision for managed devices. -->
+    <allow-in-power-save package="com.google.android.devicelockcontroller" />
 </config>
