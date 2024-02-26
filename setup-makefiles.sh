@@ -33,13 +33,26 @@ sed -i 's/vendor\/gms\//vendor\/gms\/common/' "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
-OVERLAYS=$(find overlay/ -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | paste -s -d ' ')
+OVERLAYS=$(find "$MY_DIR/overlay/" -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | paste -s -d ' ')
 printf "\n" >> "$PRODUCTMK"
 echo "PRODUCT_SOONG_NAMESPACES += vendor/$VENDOR/overlay" >> "$PRODUCTMK"
 echo "PRODUCT_PACKAGES += $OVERLAYS" >> "$PRODUCTMK"
 
-# HAX
-awk '/PrebuiltGmsCore.apk/ {print NR-2 "," NR+9 "d"}' "${ANDROIDBP}" | sed -f - -i "${ANDROIDBP}"
+# Remove PrebuiltGmsCore definition from Android.bp
+awk '/name: "PrebuiltGmsCore"/ {
+        start=NR-1;
+        count=1
+     }
+     {
+        count += gsub(/{/, "");
+        count -= gsub(/}/, "");
+        if (count == 0 && start) {
+            print start "," NR+1 "d";
+            start=0
+        }
+}' "$ANDROIDBP" | sed -f - -i "$ANDROIDBP"
+
+# Compress to gzip to fulfil to github's 100M limit
 cat <<EOF >>"${ANDROIDMK}"
 \$(PRODUCT_OUT)/obj/GMS/PrebuiltGmsCore.apk: \$(MINIGZIP)
 $(printf '\t')@rm -rf \$(dir \$@)
