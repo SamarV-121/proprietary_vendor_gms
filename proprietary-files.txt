@@ -1,10 +1,10 @@
 # All unpinned blobs are extracted from gsi_gms_arm64 UQ1A.231205.015.
 
--product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED
+-product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED;REQUIRED=AndroidAutoOverlay
 -product/priv-app/Phonesky/Phonesky.apk;PRESIGNED
 -product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
 -product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk;PRESIGNED
--product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED
+-product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED;REQUIRED=WellbeingOverlay,wellbeing
 -system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/permissions/split-permissions-google.xml
@@ -13,4 +13,4 @@ product/etc/sysconfig/google.xml
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 
 # from product/etc/sysconfig/nexus.xml
-product/etc/sysconfig/wellbeing.xml|807048b311355c83ef8d562a8907ad3c2640a5a5
+-product/etc/sysconfig/wellbeing.xml|807048b311355c83ef8d562a8907ad3c2640a5a5

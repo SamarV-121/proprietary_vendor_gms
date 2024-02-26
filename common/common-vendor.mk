@@ -10,7 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/gms/common/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
     vendor/gms/common/proprietary/product/etc/sysconfig/game_service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/game_service.xml \
     vendor/gms/common/proprietary/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
-    vendor/gms/common/proprietary/product/etc/sysconfig/wellbeing.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/wellbeing.xml \
     vendor/gms/common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
 
 PRODUCT_PACKAGES += \
@@ -19,7 +18,7 @@ PRODUCT_PACKAGES += \
     PrebuiltGmsCore \
     AndroidPlatformServices \
     WellbeingPrebuilt \
-    GoogleServicesFramework
+    GoogleServicesFramework \
 
 PRODUCT_SOONG_NAMESPACES += vendor/gms/overlay
 PRODUCT_PACKAGES += GmsOverlay

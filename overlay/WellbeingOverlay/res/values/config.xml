@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the package that will hold the wellbeing role. -->
+    <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
+
+    <!-- The package name for the default wellbeing application. [DO NOT TRANSLATE] -->
+    <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
+
+    <!-- Colon separated list of package names that should be granted DND access -->
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.gms:com.google.android.apps.wellbeing</string>
+
+    <!-- Names of packages that should not be suspended when personal use is blocked by policy. -->
+    <string-array name="config_packagesExemptFromSuspension" translatable="false">
+        <item>com.google.android.apps.wellbeing</item>
+    </string-array>
+</resources>

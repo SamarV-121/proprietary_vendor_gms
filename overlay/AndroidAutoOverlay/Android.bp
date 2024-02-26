@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "AndroidAutoOverlay",
+    product_specific: true
+}

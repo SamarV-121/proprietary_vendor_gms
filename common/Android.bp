@@ -12,6 +12,7 @@ android_app_import {
 	owner: "gms",
 	apk: "proprietary/product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk",
 	presigned: true,
+	required: ["AndroidAutoOverlay"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -48,6 +49,7 @@ android_app_import {
 	owner: "gms",
 	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
 	presigned: true,
+	required: ["WellbeingOverlay", "wellbeing"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -65,5 +67,14 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "wellbeing",
+	owner: "gms",
+	src: "proprietary/product/etc/sysconfig/wellbeing.xml",
+	filename_from_src: true,
+	sub_dir: "sysconfig",
+	product_specific: true,
 }
 
