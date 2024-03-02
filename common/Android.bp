@@ -21,6 +21,19 @@ android_app_import {
 }
 
 android_app_import {
+	name: "GoogleRestorePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt/GoogleRestorePrebuilt.apk",
+	presigned: true,
+	required: ["default-permissions_com.google.android.apps.restore"],
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "Phonesky",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/Phonesky/Phonesky.apk",
@@ -37,6 +50,19 @@ android_app_import {
 	owner: "gms",
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
 	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SetupWizardPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
+	presigned: true,
+	required: ["GoogleRestorePrebuilt"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -67,6 +93,15 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "default-permissions_com.google.android.apps.restore",
+	owner: "gms",
+	src: "proprietary/product/etc/default-permissions/default-permissions_com.google.android.apps.restore.xml",
+	filename_from_src: true,
+	sub_dir: "default-permissions",
+	product_specific: true,
 }
 
 prebuilt_etc_xml {
