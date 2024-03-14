@@ -11,6 +11,7 @@ android_app_import {
 	name: "AndroidAutoStubPrebuilt",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk",
+	preprocessed: true,
 	presigned: true,
 	required: ["AndroidAutoOverlay"],
 	dex_preopt: {
@@ -24,6 +25,7 @@ android_app_import {
 	name: "GoogleRestorePrebuilt",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt/GoogleRestorePrebuilt.apk",
+	preprocessed: true,
 	presigned: true,
 	required: ["default-permissions_com.google.android.apps.restore"],
 	dex_preopt: {
@@ -37,6 +39,7 @@ android_app_import {
 	name: "Phonesky",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/Phonesky/Phonesky.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -49,6 +52,7 @@ android_app_import {
 	name: "AndroidPlatformServices",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -61,6 +65,7 @@ android_app_import {
 	name: "SetupWizardPrebuilt",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
+	preprocessed: true,
 	presigned: true,
 	required: ["GoogleRestorePrebuilt"],
 	dex_preopt: {
@@ -74,6 +79,7 @@ android_app_import {
 	name: "WellbeingPrebuilt",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
+	preprocessed: true,
 	presigned: true,
 	required: ["WellbeingOverlay", "wellbeing"],
 	dex_preopt: {
@@ -87,6 +93,7 @@ android_app_import {
 	name: "GoogleServicesFramework",
 	owner: "gms",
 	apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
