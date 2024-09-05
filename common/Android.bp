@@ -22,9 +22,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "GoogleRestorePrebuilt",
+	name: "GoogleRestorePrebuilt-v526684",
 	owner: "gms",
-	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt/GoogleRestorePrebuilt.apk",
+	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk",
 	preprocessed: true,
 	presigned: true,
 	required: ["default-permissions_com.google.android.apps.restore"],
@@ -67,7 +67,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	required: ["GoogleRestorePrebuilt"],
+	required: ["GoogleRestorePrebuilt-v526684"],
 	dex_preopt: {
 		enabled: false,
 	},

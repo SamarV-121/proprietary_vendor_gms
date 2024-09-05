@@ -1,6 +1,6 @@
-# All unpinned blobs are extracted from gsi_gms_arm64 UQ1A.231205.015.
+# All unpinned blobs are extracted from gsi_gms_arm64 AP41.240726.009.
 
-# Core
+### Core
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/permissions/split-permissions-google.xml
 product/etc/sysconfig/google.xml
@@ -10,15 +10,20 @@ product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk;PRESIGNED
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
 
-# Optional
+### Optional
 product/etc/sysconfig/game_service.xml|3f98b695fdeba42453f5152293430b1e8b751d40
 product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
+
 # Android Auto
 product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED;REQUIRED=AndroidAutoOverlay
+
 # Digital Wellbeing
 -product/etc/sysconfig/wellbeing.xml|807048b311355c83ef8d562a8907ad3c2640a5a5
 product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED;REQUIRED=WellbeingOverlay,wellbeing
-# Setup Wizard - from raven UQ1A.240205.002
+
+# Setup Wizard
+product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk;PRESIGNED;REQUIRED=GoogleRestorePrebuilt-v526684
+
+# Setup Wizard - from husky AP3A.241001.005
 -product/etc/default-permissions/default-permissions_com.google.android.apps.restore.xml|5057a55e69e2274c1edc370441d0ba37cbf1c361
-product/priv-app/GoogleRestorePrebuilt/GoogleRestorePrebuilt.apk;PRESIGNED;REQUIRED=default-permissions_com.google.android.apps.restore|a9bc9323810729750100a56bb8bc5a3e03a7be90
-product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk;PRESIGNED;REQUIRED=GoogleRestorePrebuilt
+product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk;PRESIGNED;REQUIRED=default-permissions_com.google.android.apps.restore|087274158354df8c3d347a85d2e1ddf3c125525f
