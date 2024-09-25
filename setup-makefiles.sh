@@ -34,7 +34,7 @@ sed -i 's/vendor\/gms\//vendor\/gms\/common/' "${PRODUCTMK}"
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 echo -e "\nPRODUCT_SOONG_NAMESPACES += vendor/$VENDOR/overlay" >> "$PRODUCTMK"
-echo "PRODUCT_PACKAGES += GmsOverlay" >> "$PRODUCTMK"
+echo "PRODUCT_PACKAGES += GmsOverlay GmsSettingsOverlay" >> "$PRODUCTMK"
 
 # Remove PrebuiltGmsCore definition from Android.bp
 awk '/name: "PrebuiltGmsCore"/ {

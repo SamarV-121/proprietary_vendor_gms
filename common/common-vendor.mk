@@ -23,4 +23,4 @@ PRODUCT_PACKAGES += \
     GoogleServicesFramework \
 
 PRODUCT_SOONG_NAMESPACES += vendor/gms/overlay
-PRODUCT_PACKAGES += GmsOverlay
+PRODUCT_PACKAGES += GmsOverlay GmsSettingsOverlay
