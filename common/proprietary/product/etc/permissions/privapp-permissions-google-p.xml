@@ -147,6 +147,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
 
     <privapp-permissions package="com.google.android.apps.scone">
         <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
         <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
         <permission name="android.permission.DUMP"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
@@ -632,6 +633,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.MANAGE_USB"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.REQUEST_COMPANION_SELF_MANAGED"/>
         <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
@@ -798,22 +800,26 @@ It allows additional grants on top of privapp-permissions-platform.xml
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.retaildemo">
-        <permission name="android.permission.INSTALL_PACKAGES"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-        <permission name="android.permission.MANAGE_USERS"/>
-        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
-        <permission name="android.permission.SET_TIME_ZONE"/>
-        <permission name="android.permission.REAL_GET_TASKS"/>
         <permission name="android.permission.ACCESS_BLOBS_ACROSS_USERS"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <!-- Required to reset Settings navigation mode b/351284030. -->
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+        <!-- Required to uninstall packages b/351949347. -->
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.OBSERVE_APP_USAGE"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.QUERY_USERS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
         <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.apps.retaildemo.preload">

@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from gsi_gms_arm64 AP41.240726.009.
+# All unpinned blobs are extracted from gsi_gms_arm64 AP41.240823.009.
 
 ### Core
 product/etc/permissions/privapp-permissions-google-p.xml
@@ -24,6 +24,6 @@ product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED;REQUIRED=Well
 # Setup Wizard
 product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk;PRESIGNED;REQUIRED=GoogleRestorePrebuilt-v526684
 
-# Setup Wizard - from husky AP3A.241001.005
+# Setup Wizard - from raven AP3A.241005.015
 -product/etc/default-permissions/default-permissions_com.google.android.apps.restore.xml|5057a55e69e2274c1edc370441d0ba37cbf1c361
-product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk;PRESIGNED;REQUIRED=default-permissions_com.google.android.apps.restore|087274158354df8c3d347a85d2e1ddf3c125525f
+product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk;PRESIGNED;REQUIRED=default-permissions_com.google.android.apps.restore|fe5f961c317dad5ca5e7631fba38959bc5a4db90
