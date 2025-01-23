@@ -22,12 +22,12 @@ android_app_import {
 }
 
 android_app_import {
-	name: "GoogleRestorePrebuilt-v526684",
+	name: "GoogleRestorePrebuilt-v603273",
 	owner: "gms",
-	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk",
+	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt-v603273/GoogleRestorePrebuilt-v603273.apk",
 	preprocessed: true,
 	presigned: true,
-	required: ["default-permissions_com.google.android.apps.restore"],
+	required: ["default-permissions_com.google.android.apps.restore.xml"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -51,7 +51,7 @@ android_app_import {
 android_app_import {
 	name: "AndroidPlatformServices",
 	owner: "gms",
-	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices/AndroidPlatformServices.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
@@ -67,7 +67,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	required: ["GoogleRestorePrebuilt-v526684"],
+	required: ["GoogleRestorePrebuilt-v603273"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -81,7 +81,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	required: ["WellbeingOverlay", "wellbeing"],
+	required: ["WellbeingOverlay", "wellbeing.xml"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -103,7 +103,7 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-	name: "default-permissions_com.google.android.apps.restore",
+	name: "default-permissions_com.google.android.apps.restore.xml",
 	owner: "gms",
 	src: "proprietary/product/etc/default-permissions/default-permissions_com.google.android.apps.restore.xml",
 	filename_from_src: true,
@@ -112,7 +112,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "wellbeing",
+	name: "wellbeing.xml",
 	owner: "gms",
 	src: "proprietary/product/etc/sysconfig/wellbeing.xml",
 	filename_from_src: true,

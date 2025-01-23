@@ -1,11 +1,11 @@
-# All unpinned blobs are extracted from gsi_gms_arm64 AP41.240823.009.
+# All unpinned blobs are extracted from gsi_gms_arm64 BP11.241210.004.
 
 ### Core
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/permissions/split-permissions-google.xml
 product/etc/sysconfig/google.xml
 product/priv-app/Phonesky/Phonesky.apk;PRESIGNED
-product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
+product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices/AndroidPlatformServices.apk;PRESIGNED
 product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk;PRESIGNED
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
@@ -19,11 +19,11 @@ product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED;R
 
 # Digital Wellbeing
 -product/etc/sysconfig/wellbeing.xml|807048b311355c83ef8d562a8907ad3c2640a5a5
-product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED;REQUIRED=WellbeingOverlay,wellbeing
+product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED;REQUIRED=WellbeingOverlay,wellbeing.xml
 
 # Setup Wizard
-product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk;PRESIGNED;REQUIRED=GoogleRestorePrebuilt-v526684
+product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk;PRESIGNED;REQUIRED=GoogleRestorePrebuilt-v603273
 
-# Setup Wizard - from raven AP3A.241005.015
+# Setup Wizard - from raven AP4A.250105.002
 -product/etc/default-permissions/default-permissions_com.google.android.apps.restore.xml|5057a55e69e2274c1edc370441d0ba37cbf1c361
-product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk;PRESIGNED;REQUIRED=default-permissions_com.google.android.apps.restore|fe5f961c317dad5ca5e7631fba38959bc5a4db90
+product/priv-app/GoogleRestorePrebuilt-v603273/GoogleRestorePrebuilt-v603273.apk;PRESIGNED;REQUIRED=default-permissions_com.google.android.apps.restore.xml|b82d67c6d765e142e78cf0c03ee91efc297cc889
