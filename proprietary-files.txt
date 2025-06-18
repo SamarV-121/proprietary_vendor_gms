@@ -15,7 +15,8 @@ product/etc/sysconfig/game_service.xml|3f98b695fdeba42453f5152293430b1e8b751d40
 product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 
 # Android Auto
-product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED;REQUIRED=AndroidAutoOverlay
+product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED;REQUIRED=AndroidAutoOverlay,default-permissions-gearhead.xml
+-product/etc/default-permissions/default-permissions-gearhead.xml|afed7779481b014731f3af28b780f1dc4e8f56c9
 
 # Digital Wellbeing
 -product/etc/sysconfig/wellbeing.xml|807048b311355c83ef8d562a8907ad3c2640a5a5

@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     SetupWizardPrebuilt \
     WellbeingPrebuilt \
     GoogleServicesFramework \
+    default-permissions-gearhead.xml \
 
 PRODUCT_SOONG_NAMESPACES += vendor/gms/overlay
 PRODUCT_PACKAGES += GmsOverlay GmsSettingsOverlay

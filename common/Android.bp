@@ -13,7 +13,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	required: ["AndroidAutoOverlay"],
+	required: ["AndroidAutoOverlay", "default-permissions-gearhead.xml"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -100,6 +100,15 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "default-permissions-gearhead.xml",
+	owner: "gms",
+	src: "proprietary/product/etc/default-permissions/default-permissions-gearhead.xml",
+	filename_from_src: true,
+	sub_dir: "default-permissions",
+	product_specific: true,
 }
 
 prebuilt_etc_xml {
